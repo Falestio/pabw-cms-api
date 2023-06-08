@@ -1,0 +1,37 @@
+###
+# @name createArticle
+POST http://localhost:3000/artikel
+Content-Type: application/json
+
+{
+  "konten": "Ini adalah konten dari artikel",
+  "judul": "Ini adalah judul artikel",
+  "tanggal": "2023-06-08",
+  "slug": "ini-adalah-slug-artikel"
+}
+
+###
+# @name getArticle
+GET http://localhost:3000/artikel/ini-adalah-slug-artikel
+Content-Type: application/json
+
+###
+# @name getAllArticles
+GET http://localhost:3000/artikel
+Content-Type: application/json
+
+###
+# @name updateArticle
+PUT http://localhost:3000/artikel/ini-adalah-slug-artikel
+Content-Type: application/json
+
+{
+  "konten": "Ini adalah konten dari artikel yang diperbarui",
+  "judul": "Ini adalah judul artikel yang diperbarui",
+  "tanggal": "2023-06-09"
+}
+
+###
+# @name deleteArticle
+DELETE http://localhost:3000/artikel/ini-adalah-slug-artikel
+Content-Type: application/json
